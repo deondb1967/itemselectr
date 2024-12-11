@@ -1,9 +1,4 @@
-This R package contains functions that may be useful in test construction and development.
-
-A copy of the GNU General Public License, version 3, is available at
-<https://www.r-project.org/Licenses/GPL-3>
-
-To install the `itemselectr` package users will need to have the `devtools` package installed on their machines.
+This R package contains functions that may be useful in test construction and development. To install the `itemselectr` package users will need to have the `devtools` package installed on their machines.
 
 ```{r}
 install.packages("devtools")
