@@ -1,16 +1,14 @@
-# Generated from create-itemselectr-spare.Rmd: do not edit by hand
-
 #' Inter-item correlations
-#' 
+#'
 #' Statistics related to the inter-item correlations of the items
-#' 
+#'
 #' @param x Data frame containing items that are all scored in the same direction
 #' @return A list containing (a) the inter-item correlation matrix, (b) for each item its average correlation with the remaining items, (c) the squared multiple correlation of each item with the remaining items, and (d) the average inter-item correlation across all the items, and (e) the median inter-item correlation across all the items.
 #' @examples
 #' library(lordif)
 #' data(Anxiety)
 #' cor.item(Anxiety[4:32])
-#' @export 
+#' @export
 cor.item <- function(x) {
 k <- cor(x, use = "complete.obs")
 n <- k
