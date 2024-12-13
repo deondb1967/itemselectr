@@ -6,7 +6,7 @@
 #' @examples
 #'# Say we want to select five items from pool of nine stress items
 #'# The choose() function shows how many possible unique combinations there are
-#'choose(ncol(work_stress[1:9], 5))
+#'choose(ncol(work_stress[1:9]), 5)
 #'out <- best_items(work_stress[1:9], 5)
 #'out
 #' @export
