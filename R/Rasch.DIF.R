@@ -23,8 +23,8 @@ Rasch.DIF  <- function(std.res, group, thetas) {
   myresids <- data.frame(std.res, group, thetas)
   myresids <- data.frame(myresids[1:nitems],
                          setNames(myresids[, (nitems + 1):(nitems+ 2)], c("Group","Theta")))
-  library(foreach)
-  zzz <- foreach(i=1:nitems) %do%
+  #library(foreach)
+  zzz <- foreach::foreach(i=1:nitems) %do%
          summary(lm(myresids[,i] ~ myresids$Theta*myresids$Group))$coefficients[2:4, ]#[[i,4]]
 
   names(zzz) <-colnames(myresids[,1:nitems])
