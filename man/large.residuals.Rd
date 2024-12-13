@@ -20,9 +20,10 @@ Statistics relating to the residuals
 Identifying large residuals in a matrix of factor analysis residuals
 }
 \examples{
-library(psychTools)
-data(bfi)
-myresiduals <- psych::fa(bfi[1:10], nfactors = 2)$resid
-myoutput <- large.residuals(x = myresiduals)
+# Find the residuals of a factor analysis
+myresiduals <- psych::fa(work_stress[1:9], nfactors = 1)$resid
+
+# Identify the pairs of items with the largest residuals
+myoutput <- large.residuals(x = myresiduals, upper = -.01, lower = .01)
 myoutput
 }

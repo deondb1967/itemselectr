@@ -6,15 +6,15 @@
 #' @param Group A vector (factor) containing group membership
 #' @return DIF results
 #' @examples
-#' library(TAM)
-#' library(lordif)
-#' Anxiety <- Anxiety - 1
+#'
+#' # Lowest response category must be scored as 0
+#' work_stress0 <- work_stress[1:9] - 1
 #'
 #' ## Fit the partial credit model
-#' myRasch <- Simple.Rasch(Anxiety[ , 4:32], "PCM2")
+#' myRasch <- Simple.Rasch(work_stress0, "PCM2")
 #'
 #' ## Perform the DIF analysis using the standardized residuals, Rasch person measure and group as input
-#' dif.Rasch(myRasch$std.residuals, myRasch$thetas[,1], Anxiety$gender)
+#' dif.Rasch(myRasch$std.residuals, myRasch$thetas[,1], work_stress$gender)
 #' @export
 dif.Rasch <- function(std.residuals, Theta, Group) {
   std.residuals <- data.frame(std.residuals)

@@ -1,19 +1,14 @@
-# Generated from create-itemselectr-spare.Rmd: do not edit by hand
-
 #' McDonald's item information statistic
-#' 
+#'
 #' Calculates item information statistics (McDonald, 1999).
-#' 
+#'
 #' @param x A data frame containing items
 #' @return A matrix containing for each item its (a) unstandardized factor loading, (b) square of the loading, (c) unique variance, and (d) item information.
 #' @examples
-#' library(lordif)
-#' data(Anxiety)
-#' info <- item.information(Anxiety[4:32])
-#' info
-#' @export 
+#' info <- item.information(work_stress[1:9])
+#' @export
 item.information <- function(x) {
-  myfa <- psych::fa(x, nfactors = 1, covar = TRUE)      
+  myfa <- psych::fa(x, nfactors = 1, covar = TRUE)
   loadings <- myfa$loadings
   uniquenesses <- as.vector(myfa$uniquenesses)
   information <- loadings^2/uniquenesses

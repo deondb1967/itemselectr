@@ -18,7 +18,6 @@ The function sequentially removes the item with the lowest information statistic
 An item selection procedure based on item information statistics.
 }
 \examples{
-library(lordif)
-data(Anxiety)
-info.select(Anxiety[4:32], 5)
+# Select five items with highest information statistics
+info.select(work_stress[1:9], 5)
 }

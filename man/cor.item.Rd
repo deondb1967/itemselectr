@@ -16,7 +16,5 @@ A list containing (a) the inter-item correlation matrix, (b) for each item its a
 Statistics related to the inter-item correlations of the items
 }
 \examples{
-library(lordif)
-data(Anxiety)
-cor.item(Anxiety[4:32])
+cor.item(work_stress[1:9])
 }

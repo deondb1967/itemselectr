@@ -16,8 +16,5 @@ A matrix containing for each item its (a) unstandardized factor loading, (b) squ
 Calculates item information statistics (McDonald, 1999).
 }
 \examples{
-library(lordif)
-data(Anxiety)
-info <- item.information(Anxiety[4:32])
-info
+info <- item.information(work_stress[1:9])
 }

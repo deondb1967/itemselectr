@@ -18,7 +18,6 @@ A list containing (a) the factor loadings, (b) fit statistics of a single factor
 Calculates generalized Cook's Distance statistics. Removes a specified number of cases with largest gCD values. Compares factor loadings, fit statistics and reliabilities of full data set with the filtered data set.
 }
 \examples{
-library(lordif)
-data(Anxiety)
-influential.cases(Anxiety[1:250, 4:32], 1)
+
+influential.cases(work_stress[1:9], 10)
 }

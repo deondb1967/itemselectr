@@ -17,9 +17,6 @@ dif.ancova(data, Trait, Group)
 Differential item functioning analysis of polytomous items via ANCOVA
 }
 \examples{
-library(lordif)
-data(Anxiety)
-### Perform the dif analysis
-out <- dif.ancova(Anxiety[4:32], rowSums(Anxiety[4:32]), Anxiety$gender) 
+out <- dif.ancova(work_stress[1:9], rowSums(workStress[1:9]), work_stress$gender)
 out
 }

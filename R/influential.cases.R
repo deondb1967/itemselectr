@@ -1,16 +1,13 @@
-# Generated from create-itemselectr-spare.Rmd: do not edit by hand
-
 #' Identify influential cases and examine their impact
-#' 
+#'
 #' Calculates generalized Cook's Distance statistics. Removes a specified number of cases with largest gCD values. Compares factor loadings, fit statistics and reliabilities of full data set with the filtered data set.
-#' 
+#'
 #' @param x Data frame containing items
 #' @param ncases The number of cases to treat as influential. This value can be set to 1 and then adjusted in subsequent analyses.
 #' @return A list containing (a) the factor loadings, (b) fit statistics of a single factor solution, and (c) the Cronbach alpha coefficients of the full and filtered data sets.
 #' @examples
-#' library(lordif)
-#' data(Anxiety)
-#' influential.cases(Anxiety[1:250, 4:32], 1)
+#'
+#' influential.cases(work_stress[1:9], 10)
 #' @export
 influential.cases <- function(x, ncases = 1) {
 a <- toString(names(x))
@@ -52,7 +49,7 @@ fit <- round(rbind(srmr, RMSEA, TLI, CFI), 3)
 alpha1 <- psych::alpha(x, check.keys = TRUE)$total[1]
 alpha2 <- psych::alpha(x_filtered, check.keys = TRUE)$total[1]
 
-alphas <- c(alpha1$raw_alpha, alpha2$raw_alpha) 
+alphas <- c(alpha1$raw_alpha, alpha2$raw_alpha)
 names(alphas) <- c("All", "Filtered")
 
 myoutput <- list(influential.cases = cases,

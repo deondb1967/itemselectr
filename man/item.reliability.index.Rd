@@ -16,8 +16,5 @@ The item reliability index of each item
 Takes the item-total correlation and multiplies it with the item standard deviation
 }
 \examples{
-#Calculate item reliability indexes for the items of the Neuroticism Scale of the bfi data set
-library(psychTools)
-data(bfi)
-item.reliability.index(bfi[16:20])
+#' item.reliability.index(work_stress[1:9])
 }

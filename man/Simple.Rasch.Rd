@@ -22,20 +22,17 @@ the Rasch analysis process and to produce the output and plots that applied
 and beginner users most typically want.
 }
 \examples{
-library(TAM)
-library(lordif)
-data(Anxiety)
-Anxiety <- Anxiety - 1
+# Lowest response category must be scored as 0
+work_stress0 <- work_stress[1:9] - 1
+# Fit the rating scale model
+out <- Simple.Rasch(work_stress0, "RSM")
+ls(out)
+out$item.fit
 
-## Fit the rating scale model
-myoutput <- Simple.Rasch(raschdata = Anxiety[4:32], irtmodel = "RSM")
-ls(myoutput)
-myoutput$item.fit
-
-#' ## Fit the partial credit model
-myoutput <- Simple.Rasch(raschdata = Anxiety[4:32], irtmodel = "PCM2")
-ls(myoutput)
-myoutput$item.fit
+# Fit the partial credit model
+out <- Simple.Rasch(work_stress0, "PCM2")
+ls(out)
+out$item.fit
 
 }
 \seealso{

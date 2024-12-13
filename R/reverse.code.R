@@ -1,9 +1,7 @@
-# Generated from create-itemselectr-spare.Rmd: do not edit by hand
-
 #' Reverse code items
-#' 
+#'
 #' Reflects the scoring of items
-#' 
+#'
 #' @param x Data frame containing items, some of which may need to be reverse coded
 #' @param min.score Minimum possible score on the items
 #' @param max.score Maximum possible score on the items
@@ -12,7 +10,7 @@
 #' @examples
 #' library(psychTools)
 #' data(bfi)
-#' 
+#'
 #' ## Perform principal components analysis to observe the signs of the component loadings
 #' psych::pca(bfi[1:25], 5)
 #' items <- c("A1", "C4", "C5", "E1", "E2", "O2", "O5")

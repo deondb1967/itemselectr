@@ -17,11 +17,14 @@ Rasch.DIF(std.res, group, thetas)
 Differential item functioning analysis of polytomous items via ANCOVA
 }
 \examples{
-library(lordif)
-data(Anxiety)
-dd <- Simple.Rasch(Anxiety[4:32] - 1, "PCM2")
-dd$std.residuals <- data.frame(dd$std.residuals)
-### Perform the dif analysis
-out <- Rasch.DIF(dd$std.residuals, Anxiety$gender, dd$thetas[,1]) 
+# Lowest response category must be scored as 0
+work_stress0 <- work_stress[1:9] - 1
+d <- Simple.Rasch(work_stress0, "PCM2")
+
+# Store the standardized residuals as a data frame
+d$std.residuals <- data.frame(d$std.residuals)
+
+# Perform the dif analysis
+out <- Rasch.DIF(d$std.residuals, work_stress$gender, d$thetas[,1])
 out
 }

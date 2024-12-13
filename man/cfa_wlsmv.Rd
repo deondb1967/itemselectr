@@ -17,9 +17,6 @@ Fits a one-factor CFA model with uncorrelated errors to the polychoric correlati
 }
 \examples{
 
-library(psych)
-data(bfi)
-
-cfa_wlsmv(x)
+cfa_wlsmv(work_stress[1:9])
 
 }

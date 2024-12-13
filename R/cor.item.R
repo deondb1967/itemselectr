@@ -5,9 +5,7 @@
 #' @param x Data frame containing items that are all scored in the same direction
 #' @return A list containing (a) the inter-item correlation matrix, (b) for each item its average correlation with the remaining items, (c) the squared multiple correlation of each item with the remaining items, and (d) the average inter-item correlation across all the items, and (e) the median inter-item correlation across all the items.
 #' @examples
-#' library(lordif)
-#' data(Anxiety)
-#' cor.item(Anxiety[4:32])
+#' cor.item(work_stress[1:9])
 #' @export
 cor.item <- function(x) {
 k <- cor(x, use = "complete.obs")

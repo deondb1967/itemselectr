@@ -13,12 +13,8 @@ make.norms(xsum)
 Creates percentiles, McCall T-scores (M = 50, SD = 10) and stanines (M = 5, SD = 2)
 }
 \examples{
-# Create norms for the Neuroticism Scale of the bfi
-library(psych)
-data(bfi)
-bfi <- na.omit(bfi)
-Ntotal <- rowSums(bfi[16:20])  
-
-make.norms(Ntotal)
+# Create norms for the work_stress scale
+Stotal <- rowSums(work_stress[1:9])
+make.norms(Stotal)
 
 }

@@ -18,7 +18,6 @@ A list containing (a) the two items that constitute the core, (b) a data frame c
 A bottom-up item selection procedure based on inter-item covariances.
 }
 \examples{
-library(lordif)
-data(Anxiety)
-SchepersCluster(Anxiety[4:32], 5)
+# Build a five-item scale using hierarchical clustering approach
+SchepersCluster(work_stress[1:9], 5)
 }

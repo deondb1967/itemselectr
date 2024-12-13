@@ -18,8 +18,6 @@ At each step the number of items that have been removed, the name of the last it
 Iteratively removes item with the lowest item reliability index from a pool of items. At each step this yields a test with the largest possible variance.
 }
 \examples{
-#Calculate item reliability indexes for the items of the Neuroticism Scale of the bfi data set
-library(psychTools)
-data(bfi)
-item.selection(bfi[16:20], 3)
+Select the combination of k items that will maximise the test variance
+item.selection(work_stress[1:9], 5)
 }

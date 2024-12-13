@@ -16,12 +16,11 @@ The output is a list containing the results of the analysis.
 Basic Rasch analysis of polytomous items using the partial credit model. This function is a wrapper for the PCM() function of the eRm package. The purpose of the function is to simplify the Rasch analysis process and to produce the output that users most typically want.
 }
 \examples{
-library(lordif)
-data(Anxiety)
-Anxiety <- Anxiety[4:32] - 1 
+# Lowest response category must be scored as 0
+work_stress0 <- work_stress[1:9] - 1
 
 ## Fit the partial credit model
-myoutput <- RaschItemAnalysis(x = Anxiety)
-ls(myoutput)
-myoutput$Infit.outfit 
+out <- RaschItemAnalysis(work_stress0)
+ls(out)
+out$Infit.outfit
 }
