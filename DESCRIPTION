@@ -19,4 +19,5 @@ Imports:
     iarm,
     lavaan,
     psych,
-    semTools
+    semTools,
+    TAM
