@@ -17,6 +17,6 @@ dif.ancova(data, Trait, Group)
 Differential item functioning analysis of polytomous items via ANCOVA
 }
 \examples{
-out <- dif.ancova(work_stress[1:9], rowSums(workStress[1:9]), work_stress$gender)
+out <- dif.ancova(work_stress[1:9], rowSums(work_stress[1:9]), work_stress$gender)
 out
 }

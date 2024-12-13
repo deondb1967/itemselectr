@@ -18,6 +18,6 @@ At each step the number of items that have been removed, the name of the last it
 Iteratively removes item with the lowest item reliability index from a pool of items. At each step this yields a test with the largest possible variance.
 }
 \examples{
-Select the combination of k items that will maximise the test variance
+#Select the combination of k items that will maximise the test variance
 item.selection(work_stress[1:9], 5)
 }

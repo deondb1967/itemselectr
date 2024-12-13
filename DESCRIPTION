@@ -16,10 +16,12 @@ LazyData: true
 Imports: 
     effectsize,
     eRm,
+    faoutlier,
     foreach,
     iarm,
     lavaan,
     MBESS,
     psych,
+    psychTools,
     semTools,
     TAM

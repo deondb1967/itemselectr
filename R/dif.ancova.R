@@ -6,7 +6,7 @@
 #' @param Trait A vector containing measures of the trait. This may be the total scores across all the items, the mean item scores, factor scores, or IRT person measures.
 #' @param Group A factor indicating group membership
 #' @examples
-#'out <- dif.ancova(work_stress[1:9], rowSums(workStress[1:9]), work_stress$gender)
+#'out <- dif.ancova(work_stress[1:9], rowSums(work_stress[1:9]), work_stress$gender)
 #'out
 #' @export
 dif.ancova <- function(data, Trait, Group) {

@@ -1,5 +1,3 @@
-# Generated from create-itemselectr-spare.Rmd: do not edit by hand
-
 #' Selecting items based on Gulliksen's item reliability index
 #'
 #' Iteratively removes item with the lowest item reliability index from a pool of items. At each step this yields a test with the largest possible variance.
@@ -7,7 +5,7 @@
 #' @param nitems The number of items to retain. This value should never be less than three.
 #' @return At each step the number of items that have been removed, the name of the last item that has been removed, omega, the average item score, and the standard deviation of the test.
 #' @examples
-#' Select the combination of k items that will maximise the test variance
+#' #Select the combination of k items that will maximise the test variance
 #' item.selection(work_stress[1:9], 5)
 #' @export
 item.selection <- function(x, nitems) {

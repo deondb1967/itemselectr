@@ -15,13 +15,9 @@
 #' work_stress0 <- work_stress[1:9] - 1
 #' # Fit the rating scale model
 #' out <- Simple.Rasch(work_stress0, "RSM")
-#' ls(out)
-#' out$item.fit
 #'
 #' # Fit the partial credit model
 #' out <- Simple.Rasch(work_stress0, "PCM2")
-#' ls(out)
-#' out$item.fit
 #'
 #' @export
 Simple.Rasch <- function(raschdata, irtmodel) {
