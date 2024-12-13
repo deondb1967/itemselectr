@@ -51,18 +51,47 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Create norms for the Neuroticism Scale of the bfi</span></span></span>
-<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://personality-project.org/r/psych/" class="external-link">psych</a></span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(psych):</span> there is no package called ‘psych’</span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">bfi</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>data set ‘bfi’ not found</span>
-<span class="r-in"><span><span class="va">bfi</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/na.fail.html" class="external-link">na.omit</a></span><span class="op">(</span><span class="va">bfi</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'bfi' not found</span>
-<span class="r-in"><span><span class="va">Ntotal</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/colSums.html" class="external-link">rowSums</a></span><span class="op">(</span><span class="va">bfi</span><span class="op">[</span><span class="fl">16</span><span class="op">:</span><span class="fl">20</span><span class="op">]</span><span class="op">)</span>  </span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'bfi' not found</span>
-<span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="fu">make.norms</span><span class="op">(</span><span class="va">Ntotal</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'Ntotal' not found</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Create norms for the work_stress scale</span></span></span>
+<span class="r-in"><span><span class="va">Stotal</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/colSums.html" class="external-link">rowSums</a></span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">make.norms</span><span class="op">(</span><span class="va">Stotal</span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="make.norms-1.png" alt="" width="700" height="433"></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Raw_Score Percentile T_Score Stanine</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          9        1.8      29       1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         10        5.7      34       2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         11        9.2      37       2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         12       12.4      38       3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         13       16.6      40       3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         14       21.3      42       3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         15       26.2      44       4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         16       31.4      45       4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         17       37.3      47       4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         18       43.0      48       5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         19       48.6      50       5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         20       55.2      51       5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         21       60.7      53       6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         22       65.1      54       6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         23       69.8      55       6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         24       74.3      57       6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         25       78.2      58       7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         26       81.6      59       7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         27       84.5      60       7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         28       87.1      61       7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         29       89.2      62       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         30       91.0      63       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         31       92.7      65       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         32       93.8      65       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         33       94.7      66       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         34       95.5      67       8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         35       96.4      68       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         36       96.9      69       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         37       97.4      69       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         38       98.0      71       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         39       98.7      72       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         40       99.2      74       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         42       99.4      75       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         43       99.6      76       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         44       99.7      78       9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         45       99.9      81       9</span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>

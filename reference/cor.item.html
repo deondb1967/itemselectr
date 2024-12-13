@@ -55,12 +55,49 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">lordif</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(lordif):</span> there is no package called ‘lordif’</span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">Anxiety</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>data set ‘Anxiety’ not found</span>
-<span class="r-in"><span><span class="fu">cor.item</span><span class="op">(</span><span class="va">Anxiety</span><span class="op">[</span><span class="fl">4</span><span class="op">:</span><span class="fl">32</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'Anxiety' not found</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">cor.item</span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Correlation.matrix</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       GWS1  GWS2  GWS3  GWS4  GWS5  GWS6  GWS7  GWS8  GWS9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS1 1.000 0.565 0.562 0.566 0.551 0.577 0.594 0.557 0.538</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS2 0.565 1.000 0.566 0.553 0.559 0.533 0.551 0.574 0.560</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS3 0.562 0.566 1.000 0.560 0.583 0.580 0.559 0.559 0.564</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS4 0.566 0.553 0.560 1.000 0.563 0.558 0.549 0.562 0.553</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS5 0.551 0.559 0.583 0.563 1.000 0.550 0.543 0.574 0.527</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS6 0.577 0.533 0.580 0.558 0.550 1.000 0.551 0.545 0.551</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS7 0.594 0.551 0.559 0.549 0.543 0.551 1.000 0.560 0.514</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS8 0.557 0.574 0.559 0.562 0.574 0.545 0.560 1.000 0.534</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS9 0.538 0.560 0.564 0.553 0.527 0.551 0.514 0.534 1.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Average.r</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.557</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Median.r</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.559</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Item.average.r</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  GWS1  GWS2  GWS3  GWS4  GWS5  GWS6  GWS7  GWS8  GWS9 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 0.564 0.558 0.567 0.558 0.556 0.555 0.553 0.558 0.543 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Item.average.r.sorted</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  GWS9  GWS7  GWS6  GWS5  GWS2  GWS4  GWS8  GWS1  GWS3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 0.543 0.553 0.555 0.556 0.558 0.558 0.558 0.564 0.567 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Squared.multiple.correlation</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  GWS1  GWS2  GWS3  GWS4  GWS5  GWS6  GWS7  GWS8  GWS9 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 0.526 0.511 0.529 0.509 0.509 0.507 0.504 0.511 0.483 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Squared.multiple.correlation.sorted</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  GWS9  GWS7  GWS6  GWS5  GWS4  GWS2  GWS8  GWS1  GWS3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 0.483 0.504 0.507 0.509 0.509 0.511 0.511 0.526 0.529 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Item.total.correlation</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  GWS1  GWS2  GWS3  GWS4  GWS5  GWS6  GWS7  GWS8  GWS9 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 0.790 0.787 0.791 0.784 0.773 0.771 0.775 0.774 0.759 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Item.total.correlation.sorted</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  GWS9  GWS6  GWS5  GWS8  GWS7  GWS4  GWS2  GWS1  GWS3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 0.759 0.771 0.773 0.774 0.775 0.784 0.787 0.790 0.791 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
