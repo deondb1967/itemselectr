@@ -1,0 +1,23 @@
+#' General Work Stress Scale data
+#'
+#' Simulated data based on the item parameters of the General Work Stress Scale
+#' The items employ a five-point frequency response scale:
+#' 1 = Never, 2 = Rarely, 3 = Sometimes, 4 = Often, 5 = Always
+#'
+#' @format ## `work_stress`
+#' A data frame with 1,377 rows and 10 columns:
+#' \describe{
+#'   \item{gws1}{Does work make you so stressed that you wish you had a different job?}
+#'   \item{gws2}{Do you get so stressed at work that you want to quit?}
+#'   \item{gws3}{Do you worry about having to wake up and go to work in the morning?}
+#'   \item{gws4}{Do you find it difficult to sleep at night because you worry about your work?}
+#'   \item{gws5}{Do you get so stressed at work that you forget to do important tasks?}
+#'   \item{gws6}{Does work make you so stressed that you find it hard to concentrate on your tasks?}
+#'   \item{gws7}{Do you spend a lot of time worrying about your work?}
+#'   \item{gws8}{Do you feel like you cannot cope with your work anymore?}
+#'   \item{gws9}{Does work make you so stressed that you lose your temper?}
+#'   \item{gender}{0 = men, 1 = women}
+#'   ...
+#' }
+#' @source These data were simulated using the item parameters of a Rasch partial credit model analysis.
+"work_stress"

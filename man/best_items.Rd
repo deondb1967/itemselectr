@@ -15,11 +15,9 @@ best_items(x, k)
 The function can be useful in selecting items from a larger pool of items. The function allows for comparisons of all possible combinations of k items from the pool with respect to fit with a single factor model and reliability. The function works best if the number of possible unique combinations of items is less than 5000. It becomes extremely slow if there are more than 5000 possible combinations.
 }
 \examples{
-library(lordif)
-data(Anxiety)
-## Say we want to select the best four items from the first 15 Anxiety items
-## The choose() function shows how many possible unique combinations there are
-choose(ncol(Anxiety[4:15], 4))
-out <- best_items(Anxiety[4:15], 6) 
+# Say we want to select five items from pool of nine stress items
+# The choose() function shows how many possible unique combinations there are
+choose(ncol(work_stress[1:9], 5))
+out <- best_items(work_stress[1:9], 5)
 out
 }

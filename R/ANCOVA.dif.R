@@ -6,14 +6,13 @@
 #' @param Group A factor indicating group membership
 #' @param Trait A vector containing measures of the trait. This may be the total scores across all the items, the mean item scores, factor scores, or IRT person measures.
 #' @examples
-#'library(lordif)
-#'data(Anxiety)
 #'
-#'#'### Calculate the Trait score
-#'Trait <- rowMeans(Anxiety[4:32])
+#'# Differential item functioning across gender
+#'## Calculate the Trait score
+#'Trait <- rowSums(work_stress[1:9])
 #'
-#'#'### Perform the DIF analysis
-#'out <- ANCOVA.dif(Anxiety[4:32], Anxiety$gender, Trait)
+#'#### Perform the DIF analysis
+#'out <- ANCOVA.dif(work_stress[1:9], work_stress$gender, Trait)
 #'out
 #' @export
 ANCOVA.dif <- function(x, Group, Trait){
