@@ -66,9 +66,27 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">#### Perform the DIF analysis</span></span></span>
 <span class="r-in"><span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu">ANCOVA.dif</span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span>, <span class="va">work_stress</span><span class="op">$</span><span class="va">gender</span>, <span class="va">Trait</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in loadNamespace(x):</span> there is no package called ‘effectsize’</span>
 <span class="r-in"><span><span class="va">out</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'out' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Results</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Item Trait_p Group_p  TxG_p Trait_eta.sq Group_eta.sq TxG_eta.sq</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 GWS1       0 0.26265 0.4402       0.6248     0.000343   0.000163</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 GWS2       0 0.32465 0.2101       0.6199     0.000268   0.000434</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 GWS3       0 0.01207 0.6084       0.6262     0.001711   0.000071</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 GWS4       0 0.18434 0.9555       0.6141     0.000495   0.000001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 GWS5       0 0.20207 0.7887       0.5972     0.000477   0.000021</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 GWS6       0 0.02527 0.8207       0.5938     0.001479   0.000015</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7 GWS7       0 0.12598 0.5350       0.6012     0.000680   0.000112</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8 GWS8       0 0.59393 0.8373       0.5990     0.000083   0.000012</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9 GWS9       0 0.64020 0.1100       0.5763     0.000067   0.000788</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Most.uniform.dif</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Item Trait_eta.sq Group_eta.sq TxG_eta.sq</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 GWS3       0.6262     0.001711 0.00007116</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Most.non.uniform.dif</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Item Trait_eta.sq Group_eta.sq TxG_eta.sq</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9 GWS9       0.5763   0.00006732  0.0007877</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

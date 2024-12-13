@@ -69,7 +69,7 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## Fit the partial credit model</span></span></span>
 <span class="r-in"><span><span class="va">myRasch</span> <span class="op">&lt;-</span> <span class="fu"><a href="Simple.Rasch.html">Simple.Rasch</a></span><span class="op">(</span><span class="va">work_stress0</span>, <span class="st">"PCM2"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(psych):</span> there is no package called ‘psych’</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(TAM):</span> there is no package called ‘TAM’</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">## Perform the DIF analysis using the standardized residuals, Rasch person measure and group as input</span></span></span>
 <span class="r-in"><span><span class="fu">dif.Rasch</span><span class="op">(</span><span class="va">myRasch</span><span class="op">$</span><span class="va">std.residuals</span>, <span class="va">myRasch</span><span class="op">$</span><span class="va">thetas</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>, <span class="va">work_stress</span><span class="op">$</span><span class="va">gender</span><span class="op">)</span></span></span>

@@ -70,7 +70,7 @@ and beginner users most typically want.</p>
     </div>
     <div class="section level2">
     <h2 id="see-also">See also<a class="anchor" aria-label="anchor" href="#see-also"></a></h2>
-    <div class="dont-index"><p><code>TAM::tam.mml()</code> and <code>psych::principal()</code>, which this function wraps.</p></div>
+    <div class="dont-index"><p><code>TAM::tam.mml()</code> and <code><a href="https://rdrr.io/pkg/psych/man/principal.html" class="external-link">psych::principal()</a></code>, which this function wraps.</p></div>
     </div>
 
     <div class="section level2">
@@ -79,7 +79,7 @@ and beginner users most typically want.</p>
 <span class="r-in"><span><span class="va">work_stress0</span> <span class="op">&lt;-</span> <span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span> <span class="op">-</span> <span class="fl">1</span></span></span>
 <span class="r-in"><span><span class="co"># Fit the rating scale model</span></span></span>
 <span class="r-in"><span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu">Simple.Rasch</span><span class="op">(</span><span class="va">work_stress0</span>, <span class="st">"RSM"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(psych):</span> there is no package called ‘psych’</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(TAM):</span> there is no package called ‘TAM’</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="va">out</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>‘out’ converted to character string</span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in as.environment(pos):</span> no item called "out" on the search list</span>
@@ -88,7 +88,7 @@ and beginner users most typically want.</p>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Fit the partial credit model</span></span></span>
 <span class="r-in"><span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu">Simple.Rasch</span><span class="op">(</span><span class="va">work_stress0</span>, <span class="st">"PCM2"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(psych):</span> there is no package called ‘psych’</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(TAM):</span> there is no package called ‘TAM’</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="va">out</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>‘out’ converted to character string</span>
 <span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in as.environment(pos):</span> no item called "out" on the search list</span>

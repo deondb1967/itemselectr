@@ -57,7 +57,105 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">cfa_wlsmv</span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in loadNamespace(x):</span> there is no package called ‘lavaan’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> For constructs with categorical indicators, Zumbo et al.`s (2007) "ordinal alpha" is calculated in addition to the standard alpha, which treats ordinal variables as numeric. See Chalmers (2018) for a critique of "alpha.ord" and the response by Zumbo &amp; Kroc (2019). Likewise, average variance extracted is calculated from polychoric (polyserial) not Pearson correlations.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $model</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "Factor=~ GWS1+ GWS2+ GWS3+ GWS4+ GWS5+ GWS6+ GWS7+ GWS8+ GWS9"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $factor.loadings</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      lhs op  rhs   est    se     z pvalue ci.lower ci.upper</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Factor =~ GWS1 0.802 0.012 65.03      0    0.778    0.826</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Factor =~ GWS2 0.786 0.013 58.98      0    0.760    0.812</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Factor =~ GWS3 0.797 0.013 62.93      0    0.772    0.822</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Factor =~ GWS4 0.784 0.014 57.71      0    0.757    0.811</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Factor =~ GWS5 0.787 0.013 59.23      0    0.761    0.813</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Factor =~ GWS6 0.792 0.014 58.44      0    0.766    0.819</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7 Factor =~ GWS7 0.784 0.013 59.43      0    0.758    0.810</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8 Factor =~ GWS8 0.792 0.013 59.42      0    0.766    0.818</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9 Factor =~ GWS9 0.764 0.015 52.31      0    0.735    0.792</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $unique.variances</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       lhs op    rhs   est se  z pvalue ci.lower ci.upper</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 46   GWS1 ~~   GWS1 0.357  0 NA     NA    0.357    0.357</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 47   GWS2 ~~   GWS2 0.382  0 NA     NA    0.382    0.382</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 48   GWS3 ~~   GWS3 0.365  0 NA     NA    0.365    0.365</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 49   GWS4 ~~   GWS4 0.385  0 NA     NA    0.385    0.385</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 50   GWS5 ~~   GWS5 0.380  0 NA     NA    0.380    0.380</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 51   GWS6 ~~   GWS6 0.372  0 NA     NA    0.372    0.372</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 52   GWS7 ~~   GWS7 0.386  0 NA     NA    0.386    0.386</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53   GWS8 ~~   GWS8 0.372  0 NA     NA    0.372    0.372</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54   GWS9 ~~   GWS9 0.417  0 NA     NA    0.417    0.417</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55 Factor ~~ Factor 1.000  0 NA     NA    1.000    1.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $fit.indices</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                pvalue                  npar                 chisq </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 0.984                45.000                13.731 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                    df            tli.robust            cfi.robust </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                27.000                 0.999                 0.999 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          rmsea.robust rmsea.ci.lower.robust rmsea.ci.upper.robust </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 0.012                 0.000                 0.031 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          srmr_bentler </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 0.008 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $modification.indices</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      lhs op  rhs    mi    epc sepc.lv sepc.all sepc.nox</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 75  GWS1 ~~ GWS2 0.018 -0.003  -0.003   -0.008   -0.008</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 76  GWS1 ~~ GWS3 0.846  0.021   0.021    0.059    0.059</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 77  GWS1 ~~ GWS4 0.000  0.000   0.000    0.000    0.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 78  GWS1 ~~ GWS5 0.755  0.020   0.020    0.054    0.054</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 79  GWS1 ~~ GWS6 0.890 -0.020  -0.020   -0.056   -0.056</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 80  GWS1 ~~ GWS7 2.529 -0.034  -0.034   -0.092   -0.092</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 81  GWS1 ~~ GWS8 0.222  0.011   0.011    0.030    0.030</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 82  GWS1 ~~ GWS9 0.370  0.014   0.014    0.037    0.037</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 83  GWS2 ~~ GWS3 0.068  0.006   0.006    0.016    0.016</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 84  GWS2 ~~ GWS4 0.041  0.005   0.005    0.012    0.012</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 85  GWS2 ~~ GWS5 0.001  0.001   0.001    0.002    0.002</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 86  GWS2 ~~ GWS6 1.931  0.034   0.034    0.090    0.090</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 87  GWS2 ~~ GWS7 0.014  0.003   0.003    0.007    0.007</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 88  GWS2 ~~ GWS8 0.790 -0.021  -0.021   -0.055   -0.055</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 89  GWS2 ~~ GWS9 0.909 -0.022  -0.022   -0.056   -0.056</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 90  GWS3 ~~ GWS4 0.609  0.018   0.018    0.048    0.048</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 91  GWS3 ~~ GWS5 0.808 -0.021  -0.021   -0.055   -0.055</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 92  GWS3 ~~ GWS6 1.012 -0.022  -0.022   -0.059   -0.059</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 93  GWS3 ~~ GWS7 0.092  0.007   0.007    0.018    0.018</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 94  GWS3 ~~ GWS8 0.406  0.015   0.015    0.039    0.039</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 95  GWS3 ~~ GWS9 0.935 -0.022  -0.022   -0.056   -0.056</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 96  GWS4 ~~ GWS5 0.265 -0.012  -0.012   -0.030   -0.030</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 97  GWS4 ~~ GWS6 0.001  0.001   0.001    0.002    0.002</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 98  GWS4 ~~ GWS7 0.107  0.007   0.007    0.019    0.019</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 99  GWS4 ~~ GWS8 0.123 -0.008  -0.008   -0.021   -0.021</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 100 GWS4 ~~ GWS9 0.259 -0.012  -0.012   -0.030   -0.030</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 101 GWS5 ~~ GWS6 0.078  0.006   0.006    0.017    0.017</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 102 GWS5 ~~ GWS7 0.196  0.010   0.010    0.027    0.027</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 103 GWS5 ~~ GWS8 0.678 -0.019  -0.019   -0.051   -0.051</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 104 GWS5 ~~ GWS9 0.487  0.017   0.017    0.043    0.043</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 105 GWS6 ~~ GWS7 0.000  0.000   0.000    0.001    0.001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 106 GWS6 ~~ GWS8 0.834  0.021   0.021    0.057    0.057</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 107 GWS6 ~~ GWS9 0.221 -0.011  -0.011   -0.029   -0.029</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 108 GWS7 ~~ GWS8 0.276 -0.012  -0.012   -0.032   -0.032</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 109 GWS7 ~~ GWS9 1.282  0.027   0.027    0.068    0.068</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 110 GWS8 ~~ GWS9 0.341  0.015   0.015    0.037    0.037</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $standardized.residuals</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        GWS1   GWS2   GWS3   GWS4   GWS5   GWS6   GWS7   GWS8   GWS9</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS1  0.000                                                        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS2  0.002  0.000                                                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS3 -0.016 -0.005  0.000                                          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS4  0.000 -0.004 -0.013  0.000                                   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS5 -0.015  0.000  0.015  0.008  0.000                            </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS6  0.014 -0.026  0.015 -0.001 -0.005  0.000                     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS7  0.024 -0.002 -0.005 -0.005 -0.008  0.000  0.000              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS8 -0.008  0.015 -0.011  0.006  0.015 -0.016  0.009  0.000       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS9 -0.011  0.017  0.016  0.009 -0.013  0.009 -0.021 -0.011  0.000</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $reliability</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           Factor</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> alpha     0.9177</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> alpha.ord 0.9362</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> omega     0.9178</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> omega2    0.9178</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> omega3    0.9185</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> avevar    0.6204</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
