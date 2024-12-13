@@ -59,10 +59,18 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu">dif.ancova</span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span>, <span class="fu"><a href="https://rdrr.io/r/base/colSums.html" class="external-link">rowSums</a></span><span class="op">(</span><span class="va">workStress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span>, <span class="va">work_stress</span><span class="op">$</span><span class="va">gender</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'workStress' not found</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">out</span> <span class="op">&lt;-</span> <span class="fu">dif.ancova</span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span>, <span class="fu"><a href="https://rdrr.io/r/base/colSums.html" class="external-link">rowSums</a></span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span><span class="op">)</span>, <span class="va">work_stress</span><span class="op">$</span><span class="va">gender</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">out</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'out' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      Trait_eta.sq Udif_eta.sq NUdif_eta.sq Trait_p Udif_p NUdif_p</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS1       0.6248      0.0003       0.0002       0 0.2627  0.4402</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS2       0.6199      0.0003       0.0004       0 0.3247  0.2101</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS3       0.6262      0.0017       0.0001       0 0.0121  0.6084</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS4       0.6141      0.0005       0.0000       0 0.1843  0.9555</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS5       0.5972      0.0005       0.0000       0 0.2021  0.7887</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS6       0.5938      0.0015       0.0000       0 0.0253  0.8207</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS7       0.6012      0.0007       0.0001       0 0.1260  0.5350</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS8       0.5990      0.0001       0.0000       0 0.5939  0.8373</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> GWS9       0.5763      0.0001       0.0008       0 0.6402  0.1100</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
