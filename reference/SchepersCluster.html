@@ -61,7 +61,28 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Build a five-item scale using hierarchical clustering approach</span></span></span>
 <span class="r-in"><span><span class="fu">SchepersCluster</span><span class="op">(</span><span class="va">work_stress</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span><span class="op">]</span>, <span class="fl">5</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in library(MBESS):</span> there is no package called ‘MBESS’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘MBESS’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:psych’:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>     cor2cov</span>
+<span class="r-plt img"><img src="SchepersCluster-1.png" alt="" width="700" height="433"></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $core</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "GWS2" "GWS1"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $scale.statistics</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   omega alpha   uni tau con  av.r   ECV   TLI   RMS CFI F1.F2 added.item</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.793 0.793 1.000   1   1 0.561 0.561   NaN 0.000   1  4.75       GWS4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.837 0.837 1.000   1   1 0.562 0.988 1.002 0.004   1  5.98       GWS3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.865 0.865 0.999   1   1 0.563 0.977 1.000 0.009   1  7.00       GWS7</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   n.items</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $Items.in.scale</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "GWS2" "GWS1" "GWS4" "GWS3" "GWS7"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
