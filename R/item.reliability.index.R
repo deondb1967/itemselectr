@@ -4,7 +4,7 @@
 #' @param x A data frame that contains the items to be analysed
 #' @return The item reliability index of each item
 #' @examples
-#' #' item.reliability.index(work_stress[1:9])
+#' item.reliability.index(work_stress[1:9])
 #' @export
 item.reliability.index <- function(x) {
   zzz <- psych::alpha(x, check.keys = TRUE)

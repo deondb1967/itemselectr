@@ -16,5 +16,5 @@ The item reliability index of each item
 Takes the item-total correlation and multiplies it with the item standard deviation
 }
 \examples{
-#' item.reliability.index(work_stress[1:9])
+item.reliability.index(work_stress[1:9])
 }
