@@ -43,8 +43,7 @@ ANCOVA.dif <- function(x, Group, Trait){
     items <- summary(aov(data[, counter] ~ data[, 1]*data[, 2]))[[1]][["Pr(>F)"]]
 
     ### Obtain eta_squared
-    library(effectsize)
-    etasq <- eta_squared(aov(data[, counter] ~ data[, 1]*data[, 2]), partial = FALSE)[, 2]
+    etasq <- effectsize::eta_squared(aov(data[, counter] ~ data[, 1]*data[, 2]), partial = FALSE)[, 2]
 
     ### Place the p values in the AOV_Frame
     AOV_Frame[p, 1] <- names(data)[counter]
